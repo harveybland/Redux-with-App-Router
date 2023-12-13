@@ -1,8 +1,8 @@
 "use client";
 
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../store/store";
-import { decrement, increment } from "../store/slice";
+import { RootState } from "../redux/store";
+import { decrement, increment } from "../redux/slice";
 
 export default function HomeAction() {
   const count = useSelector((state: RootState) => state.counter.value);
